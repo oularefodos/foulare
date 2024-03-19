@@ -12,7 +12,7 @@ const page = () => {
                 >
                     <Button className="flex items-center gap-x-2">
                         {" "}
-                        <Linkedin /> Linkdln
+                        <Linkedin /> Linkedin
                     </Button>
                 </Link>
                 <Link href={"https://github.com/oularefodos?tab=repositories/"}>

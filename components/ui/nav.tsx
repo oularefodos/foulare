@@ -21,13 +21,14 @@ const Nav = () => {
         },
     ];
     return (
-        <div className="w-auto h-auto backdrop-blur-sm bg-black/30 px-2 py-11 fixed space-y-2 top-0 left-0 z-40">
+        <div className="flex items-center backdrop-blur-sm bg-black/30 justify-center gap-x-4 px-4 py-5 fixed top-0 left-0 right-0 z-40">
             {menu.map(({ label, link }, index) => pathname !== link && (
                 <Link
                     href={link}
+                    key={index}
                     className="flex  hover:text-white items-center gap-x-2 text-gray-300"
                 >
-                 <ArrowRight />  {label}
+                 {label}
                 </Link>
             ))}
         </div>

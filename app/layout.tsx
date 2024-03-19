@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/ui/nav";
+import { Source_Code_Pro } from 'next/font/google'
+import { cn } from "@/utils/cn";
 
-const inter = Inter({ subsets: ["latin"] });
+const sourceCodePro = Source_Code_Pro({ subsets : ['latin']});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black">
+      <body className={cn("bg-black", sourceCodePro.className)}>
         <main className="w-full h-full">
           <Nav />
-          {children}
+          <div className="mt-11 h-full w-full">
+            {children}
+          </div>
         </main>
       </body>
     </html>

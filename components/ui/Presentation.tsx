@@ -32,7 +32,7 @@ export function Presentation() {
             <div className="flex items-center gap-x-3">
                 <Link
                     href="/projects"
-                    className="bg-black flex items-center gap-x-2 border dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2"
+                    className="bg-black hover:gap-3 flex items-center gap-x-2 border dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2"
                 >
                     Projects <ArrowRight />
                 </Link>
@@ -42,7 +42,7 @@ export function Presentation() {
                 >
                     <Button
                         borderRadius="1.75rem"
-                        className="bg-white h-11 text-black font-bold"
+                        className="bg-white h-11 w-40 text-black font-bold"
                     >
                         Contact me
                     </Button>

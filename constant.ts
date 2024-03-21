@@ -19,7 +19,7 @@ export const schoolProjects = [
         title: "Minishell",
         description: "Delve into systems programming by creating a mini shell in C. Design and implement a simplified shell that interprets user commands, launches processes, and manages their execution.",
         link: "https://github.com/oularefodos/Mini-Shell",
-        skills : ['Bash', 'Shell', 'System programming'],
+        skills : ['Bash', 'Shell', 'System programming', 'C'],
         beginDate: '2024-08-11',
         endDate: '2024-08-11',
     },

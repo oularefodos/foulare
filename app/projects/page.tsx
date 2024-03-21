@@ -9,8 +9,6 @@ import { personalprojects, schoolProjects } from "@/constant";
 
 
 const page = () => {
-
-
     
     return (
         <motion.div
@@ -21,7 +19,7 @@ const page = () => {
                 duration: 0.8,
                 ease: "easeInOut",
             }}
-            className="h-full p-6 text-gray-300 max-w-[1200px] m-auto space-y-11 flex flex-col py-11"
+            className="h-auto min-h-full p-6 text-gray-300 max-w-[1200px] m-auto space-y-11 flex flex-col py-11"
         >
             <h1 className="md:text-4xl p-2 border-t border-b border-gray-700 text-center font-bold italic uppercase">
                 Skills

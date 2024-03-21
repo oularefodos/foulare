@@ -4,29 +4,14 @@ import { HoverEffect } from "@/components/card";
 import { ArrowRight, Code, TestTube } from "lucide-react";
 import { motion } from "framer-motion";
 import React from "react";
+import { personalprojects, schoolProjects } from "@/constant";
 
-export const projects = [
-    {
-        title: "Stripe",
-        description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
-    },
-    {
-        title: "Netflix",
-        description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        link: "https://netflix.com",
-    },
-    {
-        title: "Google",
-        description:
-            "A multinational technology company that specializes in Internet-related services and products.",
-        link: "https://google.com",
-    },
-];
+
 
 const page = () => {
+
+
+    
     return (
         <motion.div
             initial={{ opacity: 0.0, y: 40 }}
@@ -65,23 +50,16 @@ const page = () => {
             </h1>
             <div>
                 <div className="flex italic items-center gap-x-2">
-                    <ArrowRight /> Project academic
+                    <ArrowRight /> Some of my School Project
                 </div>
-                <HoverEffect items={projects} />
+                <HoverEffect items={schoolProjects} />
             </div>
             <div>
                 <div className="flex italic items-center gap-x-2">
-                    <ArrowRight /> Project academic
+                    <ArrowRight /> Personal Project
                 </div>
 
-                <HoverEffect items={projects} />
-            </div>
-            <div>
-                <div className="flex italic items-center gap-x-2">
-                    <ArrowRight /> Side Project
-                </div>
-
-                <HoverEffect items={projects} />
+                <HoverEffect items={personalprojects} />
             </div>
         </motion.div>
     );

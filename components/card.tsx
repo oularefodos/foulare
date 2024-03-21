@@ -63,7 +63,7 @@ export const HoverEffect = ({
                         <div className="flex items-center gap-2 mt-4 flex-wrap">
                             {
                               item.skills.map((skill : string, index : number) => (
-                                <div className=" p-1 border border-gray-700 text-gray-400"> {skill} </div>
+                                <div key={index} className=" p-1 border border-gray-700 text-gray-400"> {skill} </div>
                               ))
                             }
                         </div>

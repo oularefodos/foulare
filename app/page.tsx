@@ -18,7 +18,7 @@ export default function BackgroundBoxesDemo() {
 					particleColor='#FFFFFF'
 				/>
 			</div>
-			<div className='bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20'>
+			<div className='bg-clip-text z-10 text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20'>
 				<Presentation />
 			</div>
 		</div>

@@ -14,8 +14,6 @@ export const HoverEffect = ({
         description: string;
         link: string;
         skills: string[];
-        beginDate: string;
-        endDate: string;
     }[];
     className?: string;
 }) => {
@@ -56,9 +54,6 @@ export const HoverEffect = ({
                         <CardTitle className="flex items-center justify-between">
                             <span>{item.title}</span> <Link href={item.link} className="block p-1 bg-zinc-800 rounded-lg"><Github /> </Link>{" "}
                         </CardTitle>
-                        <span className="text-[12px] mt-4">
-                            {item.beginDate} to {item.endDate}{" "}
-                        </span>
                         <CardDescription>{item.description}</CardDescription>
                         <div className="flex items-center gap-2 mt-4 flex-wrap">
                             {

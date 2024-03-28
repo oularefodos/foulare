@@ -17,7 +17,7 @@ const page = () => {
             }}
             className="flex h-full w-full items-center justify-center"
         >
-            <div className="h-auto w-[200px] flex flex-col space-y-5">
+            <div className="h-auto w-[200px] flex flex-col space-y-5 z-10">
                 <Link
                     href={"https://www.linkedin.com/in/fode-oulare-a967a21bb/"}
                     className="w-full"

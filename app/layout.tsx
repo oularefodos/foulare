@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/ui/nav";
 import { Source_Code_Pro } from 'next/font/google'
 import { cn } from "@/utils/cn";
+import { BackgroundBeams } from '@/components/ui/back';
 
 const sourceCodePro = Source_Code_Pro({ subsets : ['latin']});
 
@@ -18,15 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn("bg-black", sourceCodePro.className)}>
-        <main className="w-full h-full">
-          <Nav />
-          <div className="mt-11 h-full w-full">
-            {children}
-          </div>
-        </main>
-      </body>
-    </html>
+		<html lang='en'>
+			<body className={cn('bg-black', sourceCodePro.className)}>
+				<main className='w-full h-full'>
+					<Nav />
+					<div className='mt-11 h-full w-full'>{children}</div>
+					<BackgroundBeams />
+				</main>
+			</body>
+		</html>
   );
 }

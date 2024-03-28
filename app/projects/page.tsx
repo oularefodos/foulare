@@ -4,7 +4,8 @@ import { HoverEffect } from "@/components/card";
 import { ArrowRight, Code, TestTube } from "lucide-react";
 import { motion } from "framer-motion";
 import React from "react";
-import { personalprojects, schoolProjects } from "@/constant";
+import { schoolProjects } from "@/constant";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 
 
@@ -48,17 +49,17 @@ const page = () => {
             </h1>
             <div>
                 <div className="flex italic items-center gap-x-2">
-                    <ArrowRight /> Some of my School Project
+                    <ArrowRight /> Currently working on <span className="font-bold ">BotifyHub</span>
+                </div>
+                <p className="m-5 text-gray-400">
+                    Empowering users to craft intelligent chatbots effortlessly across messaging platforms & websites, breaking barriers with a seamless, no-code experience.
+                </p>
+                <div className="flex italic items-center gap-x-2">
+                    <ArrowRight /> Some of my School
                 </div>
                 <HoverEffect items={schoolProjects} />
             </div>
-            <div>
-                <div className="flex italic items-center gap-x-2">
-                    <ArrowRight /> Personal Project
-                </div>
-
-                <HoverEffect items={personalprojects} />
-            </div>
+            
         </motion.div>
     );
 };

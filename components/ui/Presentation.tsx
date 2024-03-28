@@ -16,18 +16,14 @@ export function Presentation() {
                 duration: 0.8,
                 ease: "easeInOut",
             }}
-            className="relative flex flex-col gap-4 items-center justify-center px-4"
+            className="relative flex flex-col gap-4 items-center justify-center px-4 z-10"
         >
-            <div className="text-3xl font-bold md:text-7xl  text-white text-center">
-                I'am Fode oulare
+            <div className="relative z-10 text-lg md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+                FODE OULARE
             </div>
-            <div className="font-extralight text-base md:text-4xl text-green-200 py-4">
-                Software Engineer
-            </div>
-            <div className="font-extralight text-center text-base md:text-xl max-w-[500px] text-neutral-200 py-4">
-                I am a passionate Full-Stack developer with a love for
-                technology, continuous learning, and creating innovative
-                solutions.
+
+            <div className="font-extralight text-[17px] text-center text-base  max-w-[500px] text-neutral-200 py-4">
+                Hello there! I'm a <span className="font-bold text-green-400">Software Engineer</span> with a knack for transforming concepts into captivating digital experiences through code. My expertise lies in crafting innovative solutions that resonate with audiences. Let's collaborate to bring your ideas to life
             </div>
             <div className="flex items-center gap-x-3">
                 <Link
